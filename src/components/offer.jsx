@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Offer = () => {
-    return <div className="page">
+  return <div className="page">
     <header className="header">
       <div className="container">
         <div className="header__wrapper">
@@ -67,7 +67,7 @@ const Offer = () => {
             </div>
             <div className="property__rating rating">
               <div className="property__stars rating__stars">
-                <span style={{width: "80%"}}></span>
+                <span style={{width: `80%`}}></span>
                 <span className="visually-hidden">Rating</span>
               </div>
               <span className="property__rating-value rating__value">4.8</span>
@@ -156,7 +156,7 @@ const Offer = () => {
                   <div className="reviews__info">
                     <div className="reviews__rating rating">
                       <div className="reviews__stars rating__stars">
-                        <span style={{width: "80%"}}></span>
+                        <span style={{width: `80%`}}></span>
                         <span className="visually-hidden">Rating</span>
                       </div>
                     </div>
@@ -243,7 +243,7 @@ const Offer = () => {
                 </div>
                 <div className="place-card__rating rating">
                   <div className="place-card__stars rating__stars">
-                    <span style={{width: "80%"}}></span>
+                    <span style={{width: `80%`}}></span>
                     <span className="visually-hidden">Rating</span>
                   </div>
                 </div>
@@ -275,7 +275,7 @@ const Offer = () => {
                 </div>
                 <div className="place-card__rating rating">
                   <div className="place-card__stars rating__stars">
-                    <span style={{width: "80%"}}></span>
+                    <span style={{width: `80%`}}></span>
                     <span className="visually-hidden">Rating</span>
                   </div>
                 </div>
@@ -307,7 +307,7 @@ const Offer = () => {
                 </div>
                 <div className="place-card__rating rating">
                   <div className="place-card__stars rating__stars">
-                    <span style={{width: "100%"}}></span>
+                    <span style={{width: `100%`}}></span>
                     <span className="visually-hidden">Rating</span>
                   </div>
                 </div>
@@ -321,7 +321,7 @@ const Offer = () => {
         </section>
       </div>
     </main>
-  </div>
+  </div>;
 };
 
 export default Offer;

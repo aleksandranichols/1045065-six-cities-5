@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import PropTypes from 'prop-types';
 import Main from './main';
 import Login from './login';
@@ -27,7 +27,7 @@ const App = (props) => {
         <h1>404</h1>
       </Route>
     </Switch>
-  </BrowserRouter>
+  </BrowserRouter>;
 };
 
 App.propTypes = {

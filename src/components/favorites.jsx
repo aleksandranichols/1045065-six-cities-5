@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Favorites = () => {
-    return     <div className="page">
+  return <div className="page">
     <header className="header">
       <div className="container">
         <div className="header__wrapper">
@@ -60,7 +60,7 @@ const Favorites = () => {
                     </div>
                     <div className="place-card__rating rating">
                       <div className="place-card__stars rating__stars">
-                        <span style={{width: "100%"}}></span>
+                        <span style={{width: `100%`}}></span>
                         <span className="visually-hidden">Rating</span>
                       </div>
                     </div>
@@ -92,7 +92,7 @@ const Favorites = () => {
                     </div>
                     <div className="place-card__rating rating">
                       <div className="place-card__stars rating__stars">
-                        <span style={{width: "80%"}}></span>
+                        <span style={{width: `80%`}}></span>
                         <span className="visually-hidden">Rating</span>
                       </div>
                     </div>
@@ -135,7 +135,7 @@ const Favorites = () => {
                     </div>
                     <div className="place-card__rating rating">
                       <div className="place-card__stars rating__stars">
-                        <span style={{width: "100%"}}></span>
+                        <span style={{width: `100%`}}></span>
                         <span className="visually-hidden">Rating</span>
                       </div>
                     </div>
@@ -156,7 +156,7 @@ const Favorites = () => {
         <img className="footer__logo" src="img/logo.svg" alt="6 cities logo" width="64" height="33" />
       </a>
     </footer>
-  </div>
+  </div>;
 };
 
 export default Favorites;

@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Login = () => {
-    return     <div className="page page--gray page--login">
+  return <div className="page page--gray page--login">
     <header className="header">
       <div className="container">
         <div className="header__wrapper">
@@ -50,7 +50,7 @@ const Login = () => {
         </section>
       </div>
     </main>
-  </div>
+  </div>;
 };
 
 export default Login;
