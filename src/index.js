@@ -3,13 +3,15 @@ import ReactDOM from 'react-dom';
 import App from './components/app';
 import PropTypes from 'prop-types';
 
-const rentalOffers = 312;
+import {offers} from './mocks/offers.js';
+import {RENTAL_OFFERS_TOTAL} from './mocks/constants.js';
 
 ReactDOM.render(
-    <App rentalOffers={rentalOffers} />,
+    <App RENTAL_OFFERS_TOTAL={RENTAL_OFFERS_TOTAL}
+      offers={offers} />,
     document.getElementById(`root`)
 );
 
 App.propTypes = {
-  rentalOffers: PropTypes.number.isRequired
+  RENTAL_OFFERS_TOTAL: PropTypes.number.isRequired
 };
