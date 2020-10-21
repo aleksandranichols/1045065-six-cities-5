@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 import OfferProptypes from './offer-proptypes';
 
 const OfferCard = (props) => {
-  const {offer, handleHover} = props;
+  const {offer, i, handleHover} = props;
 
   return <article className="cities__place-card place-card"
     onMouseEnter={handleHover}
@@ -15,9 +15,9 @@ const OfferCard = (props) => {
       </div> : ``
     }
     <div className="cities__image-wrapper place-card__image-wrapper">
-      <a href="#">
+      <Link to={`offer/${i}`}>
         <img className="place-card__image" src={offer.pictures[0]} width="260" height="200" alt="Place image" />
-      </a>
+      </Link>
     </div>
     <div className="place-card__info">
       <div className="place-card__price-wrapper">
@@ -39,7 +39,7 @@ const OfferCard = (props) => {
         </div>
       </div>
       <h2 className="place-card__name">
-        <Link to="/offer/1">{offer.title}</Link>
+        <Link to={`offer/${i}`}>{offer.title}</Link>
       </h2>
       <p className="place-card__type">{offer.type}</p>
     </div>

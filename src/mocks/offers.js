@@ -31,7 +31,7 @@ export const offers = [
     price: Math.round(Math.random() * 100),
     rate: Math.round(Math.random() * 5),
     pictures: PICTURES,
-    amenties: AMENTIES,
+    amenities: AMENTIES,
     host: {
       name: `Angelina`,
       avatar: `https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/9b/9b22332e7f57948df98025f0148f5d6ca1c28347.jpg`,
@@ -49,7 +49,7 @@ export const offers = [
     price: Math.round(Math.random() * 100),
     rate: Math.round(Math.random() * 5),
     pictures: PICTURES,
-    amenties: AMENTIES,
+    amenities: AMENTIES,
     host: {
       name: `Angelina`,
       avatar: `https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/9a/9a191fe49af8fb5ea1652adc7f2f8556e15f1fe3.jpg`,
@@ -67,7 +67,7 @@ export const offers = [
     price: Math.round(Math.random() * 100),
     rate: Math.round(Math.random() * 5),
     pictures: PICTURES,
-    amenties: AMENTIES,
+    amenities: AMENTIES,
     host: {
       name: `Angelina`,
       avatar: `https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/00/0075ef84f05a328864f26972cd2e8ec460338ff7.jpg`,

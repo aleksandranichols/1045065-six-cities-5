@@ -6,7 +6,7 @@ import Offers from './offers';
 import OfferProptypes from './offer-proptypes';
 
 const Main = (props) => {
-  const {RENTAL_OFFERS_TOTAL, offers} = props;
+  const {offers} = props;
 
   return <div className="page page--gray page--main">
     <header className="header">
@@ -74,7 +74,7 @@ const Main = (props) => {
         <div className="cities__places-container container">
           <section className="cities__places places">
             <h2 className="visually-hidden">Places</h2>
-            <b className="places__found">{RENTAL_OFFERS_TOTAL} places to stay in Amsterdam</b>
+            <b className="places__found">{offers.length} places to stay in Amsterdam</b>
             <form className="places__sorting" action="#" method="get">
               <span className="places__sorting-caption">Sort by</span>
               <span className="places__sorting-type" tabIndex="0">
@@ -109,9 +109,6 @@ const Main = (props) => {
   </div>;
 };
 
-Main.propTypes = {
-  RENTAL_OFFERS_TOTAL: PropTypes.number.isRequired,
-  offers: PropTypes.arrayOf(OfferProptypes)
-};
+Main.propTypes = {offers: PropTypes.arrayOf(OfferProptypes)};
 
 export default Main;

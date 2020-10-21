@@ -26,6 +26,7 @@ class Offers extends PureComponent {
       <OfferCard
         offer={offer}
         key={`card-${i}`}
+        i={i}
         handleHover={this.handleHover} />));
   }
 }

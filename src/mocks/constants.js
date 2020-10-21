@@ -3,6 +3,4 @@ const AMENTIES = [`Wi-Fi`, `Heating`, `Kitchen`, `Fridge`, `Washing machine`, `C
   `Baby seat`, `Cabel TV`];
 const PICTURES = [`https://http.cat/200`, `https://http.cat/404`, `https://http.cat/500`];
 
-const RENTAL_OFFERS_TOTAL = 312;
-
-export {AMENTIES, PICTURES, RENTAL_OFFERS_TOTAL};
+export {AMENTIES, PICTURES};

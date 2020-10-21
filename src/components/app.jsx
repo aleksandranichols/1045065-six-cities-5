@@ -10,20 +10,20 @@ import Favorites from './favorites';
 import OfferProptypes from './offer-proptypes';
 
 const App = (props) => {
-  const {RENTAL_OFFERS_TOTAL, offers} = props;
+  const {offers} = props;
 
   return <BrowserRouter>
     <Switch>
       <Route path="/" exact>
-        <Main RENTAL_OFFERS_TOTAL = {RENTAL_OFFERS_TOTAL}
-          offers={offers}
-          Offers={Offers} />
+        <Main offers={offers} Offers={Offers} />
       </Route>
       <Route path="/login" exact>
         <Login />
       </Route>
       <Route path="/offer/:id?" exact>
-        <Offer offers={offers} />
+        {offers.map((offer, i) => (
+          <Offer offer={offer} key={`offer-${i}`}/>
+        ))}
       </Route>
       <Route path="/favorites" exact>
         <Favorites offers={offers} />
@@ -35,9 +35,6 @@ const App = (props) => {
   </BrowserRouter>;
 };
 
-App.propTypes = {
-  RENTAL_OFFERS_TOTAL: PropTypes.number.isRequired,
-  offers: PropTypes.arrayOf(OfferProptypes)
-};
+App.propTypes = {offers: PropTypes.arrayOf(OfferProptypes)};
 
 export default App;

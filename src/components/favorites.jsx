@@ -48,9 +48,9 @@ const Favorites = (props) => {
                 {offers.map((offer, i) => {
                   return <article className="favorites__card place-card" key={`card-${i}`}>
                     <div className="favorites__image-wrapper place-card__image-wrapper">
-                      <a href="#">
+                      <Link to={`offer/${i}`}>
                         <img className="place-card__image" src={offer.pictures[0]} width="150" height="110" alt="Place image" />
-                      </a>
+                      </Link>
                     </div>
                     <div className="favorites__card-info place-card__info">
                       <div className="place-card__price-wrapper">
@@ -72,7 +72,7 @@ const Favorites = (props) => {
                         </div>
                       </div>
                       <h2 className="place-card__name">
-                        <Link to="/offer/1" href="#">{offer.title}</Link>
+                        <Link to={`offer/${i}`}>{offer.title}</Link>
                       </h2>
                       <p className="place-card__type">{offer.type}</p>
                     </div>
@@ -85,7 +85,7 @@ const Favorites = (props) => {
       </div>
     </main>
     <footer className="footer container">
-      <Link to="/" className="footer__logo-link" href="main.html">
+      <Link to="/" className="footer__logo-link">
         <img className="footer__logo" src="img/logo.svg" alt="6 cities logo" width="64" height="33" />
       </Link>
     </footer>
