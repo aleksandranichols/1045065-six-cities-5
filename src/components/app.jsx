@@ -5,9 +5,8 @@ import PropTypes from 'prop-types';
 import Main from './main';
 import Login from './login';
 import Offer from './offer';
-import Offers from './offers';
 import Favorites from './favorites';
-import OfferProptypes from './offer-proptypes';
+import offerProptypes from './offer-proptypes';
 
 const App = (props) => {
   const {offers} = props;
@@ -15,16 +14,16 @@ const App = (props) => {
   return <BrowserRouter>
     <Switch>
       <Route path="/" exact>
-        <Main offers={offers} Offers={Offers} />
+        <Main offers={offers} />
       </Route>
       <Route path="/login" exact>
         <Login />
       </Route>
-      <Route path="/offer/:id?" exact>
-        {offers.map((offer, i) => (
-          <Offer offer={offer} key={`offer-${i}`}/>
-        ))}
-      </Route>
+      {offers.map((offer, i) => (
+        <Route path={`/offer/${i}`} key={`offer-${i}`} exact>
+          <Offer offer={offer} />
+        </Route>
+      ))}
       <Route path="/favorites" exact>
         <Favorites offers={offers} />
       </Route>
@@ -35,6 +34,6 @@ const App = (props) => {
   </BrowserRouter>;
 };
 
-App.propTypes = {offers: PropTypes.arrayOf(OfferProptypes)};
+App.propTypes = {offers: PropTypes.arrayOf(offerProptypes)};
 
 export default App;

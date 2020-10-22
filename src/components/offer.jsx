@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 
 import Review from './review';
 import ReviewForm from './review-form';
-import OfferProptypes from './offer-proptypes';
+import offerProptypes from './offer-proptypes';
 
 const Offer = (props) => {
   const {offer} = props;
@@ -228,6 +228,6 @@ const Offer = (props) => {
   </div>;
 };
 
-Offer.propTypes = OfferProptypes;
+Offer.propTypes = offerProptypes;
 
 export default Offer;

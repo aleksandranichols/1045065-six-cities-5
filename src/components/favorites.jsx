@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {Link} from 'react-router-dom';
 
-import OfferProptypes from './offer-proptypes';
+import offerProptypes from './offer-proptypes';
 
 const Favorites = (props) => {
   const {offers} = props;
@@ -93,7 +93,7 @@ const Favorites = (props) => {
 };
 
 Favorites.propTypes = {
-  offers: PropTypes.arrayOf(OfferProptypes)
+  offers: PropTypes.arrayOf(offerProptypes)
 };
 
 export default Favorites;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ReviewProptypes from './review-proptypes';
+import reivewProptypes from './review-proptypes';
 
 const Review = (props) => {
   const {review} = props;
@@ -29,6 +29,6 @@ const Review = (props) => {
   </li>;
 };
 
-Review.propTypes = ReviewProptypes;
+Review.propTypes = reivewProptypes;
 
 export default Review;

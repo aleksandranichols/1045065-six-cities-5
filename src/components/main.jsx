@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 
 import Map from './map';
 import Offers from './offers';
-import OfferProptypes from './offer-proptypes';
+import offerProptypes from './offer-proptypes';
 
 const Main = (props) => {
   const {offers} = props;
@@ -110,6 +110,6 @@ const Main = (props) => {
   </div>;
 };
 
-Main.propTypes = {offers: PropTypes.arrayOf(OfferProptypes)};
+Main.propTypes = {offers: PropTypes.arrayOf(offerProptypes)};
 
 export default Main;

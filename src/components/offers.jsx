@@ -2,7 +2,7 @@ import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
 
 import OfferCard from './offer-card';
-import OfferProptypes from './offer-proptypes';
+import offerProptypes from './offer-proptypes';
 
 class Offers extends PureComponent {
   constructor(props) {
@@ -12,10 +12,10 @@ class Offers extends PureComponent {
       hover: false
     };
 
-    this.handleHover = this.handleHover.bind(this);
+    this.onHover = this.onHover.bind(this);
   }
 
-  handleHover() {
+  onHover() {
     this.setState({hover: !this.state.hover});
   }
 
@@ -27,10 +27,10 @@ class Offers extends PureComponent {
         offer={offer}
         key={`card-${i}`}
         i={i}
-        handleHover={this.handleHover} />));
+        onHover={this.onHover} />));
   }
 }
 
-Offers.propTypes = {offers: PropTypes.arrayOf(OfferProptypes)};
+Offers.propTypes = {offers: PropTypes.arrayOf(offerProptypes)};
 
 export default Offers;
