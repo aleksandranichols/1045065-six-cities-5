@@ -1,14 +1,14 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
-import OfferProptypes from './offer-proptypes';
+import offerProptypes from './offer-proptypes';
 
 const OfferCard = (props) => {
-  const {offer, i, handleHover} = props;
+  const {offer, i, onHover} = props;
 
   return <article className="cities__place-card place-card"
-    onMouseEnter={handleHover}
-    onMouseLeave={handleHover}>
+    onMouseEnter={onHover}
+    onMouseLeave={onHover}>
     {offer.premium ?
       <div className="place-card__mark">
         <span>Premium</span>
@@ -46,6 +46,6 @@ const OfferCard = (props) => {
   </article>;
 };
 
-OfferCard.propTypes = OfferProptypes;
+OfferCard.propTypes = offerProptypes;
 
 export default OfferCard;

@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types';
 
-import ReviewProptypes from './review-proptypes';
+import reivewProptypes from './review-proptypes';
 
-const OfferProptypes = () => {
+const offerProptypes = () => {
   return {
     i: PropTypes.number.isRequired,
-    handleHover: PropTypes.func.isRequired,
+    onHover: PropTypes.func.isRequired,
     offer: PropTypes.shape({
       title: PropTypes.string.isRequired,
       description: PropTypes.string.isRequired,
@@ -23,8 +23,8 @@ const OfferProptypes = () => {
       avatar: PropTypes.string.isRequired,
       super: PropTypes.bool.isRequired,
     }),
-    reviews: PropTypes.arrayOf(ReviewProptypes)
+    reviews: PropTypes.arrayOf(reivewProptypes)
   };
 };
 
-export default OfferProptypes;
+export default offerProptypes;

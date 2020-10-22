@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-const ReviewProptypes = () => {
+const reivewProptypes = () => {
   return {
     review: PropTypes.shape({
       name: PropTypes.string.isRequired,
@@ -12,4 +12,4 @@ const ReviewProptypes = () => {
   };
 };
 
-export default ReviewProptypes;
+export default reivewProptypes;
