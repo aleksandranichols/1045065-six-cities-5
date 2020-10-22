@@ -14,6 +14,7 @@ export const offers = [
     rate: Math.round(Math.random() * 5),
     pictures: PICTURES,
     amenities: AMENTIES,
+    coordinates: [52.3909553943508, 4.85309666406198],
     host: {
       name: `Angelina`,
       avatar: `https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/51/51dfce0e1690a2cc18ada4aefd7f8f1622b662e0.jpg`,
@@ -32,6 +33,7 @@ export const offers = [
     rate: Math.round(Math.random() * 5),
     pictures: PICTURES,
     amenities: AMENTIES,
+    coordinates: [52.369553943508, 4.85309666406198],
     host: {
       name: `Angelina`,
       avatar: `https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/9b/9b22332e7f57948df98025f0148f5d6ca1c28347.jpg`,
@@ -50,6 +52,7 @@ export const offers = [
     rate: Math.round(Math.random() * 5),
     pictures: PICTURES,
     amenities: AMENTIES,
+    coordinates: [52.3909553943508, 4.929309666406198],
     host: {
       name: `Angelina`,
       avatar: `https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/9a/9a191fe49af8fb5ea1652adc7f2f8556e15f1fe3.jpg`,
@@ -68,6 +71,7 @@ export const offers = [
     rate: Math.round(Math.random() * 5),
     pictures: PICTURES,
     amenities: AMENTIES,
+    coordinates: [52.3809553943508, 4.939309666406198],
     host: {
       name: `Angelina`,
       avatar: `https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/00/0075ef84f05a328864f26972cd2e8ec460338ff7.jpg`,
