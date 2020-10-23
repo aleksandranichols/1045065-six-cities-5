@@ -1,35 +1,19 @@
-import React, {PureComponent} from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
 import OfferCard from './offer-card';
 import offerProptypes from './offer-proptypes';
 
-class Offers extends PureComponent {
-  constructor(props) {
-    super(props);
+const Offers = (props) => {
+  const {offers} = props;
 
-    this.state = {
-      hover: false
-    };
-
-    this.onHover = this.onHover.bind(this);
-  }
-
-  onHover() {
-    this.setState({hover: !this.state.hover});
-  }
-
-  render() {
-    const {offers} = this.props;
-
-    return (offers.map((offer, i) =>
-      <OfferCard
-        offer={offer}
-        key={`card-${i}`}
-        i={i}
-        onHover={this.onHover} />));
-  }
-}
+  return offers.map((offer, i) => {
+    return <OfferCard
+      offer={offer}
+      key={`card-${i}`}
+      i={i} />;
+  });
+};
 
 Offers.propTypes = {offers: PropTypes.arrayOf(offerProptypes)};
 
