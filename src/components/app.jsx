@@ -1,27 +1,31 @@
 import React from 'react';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import PropTypes from 'prop-types';
+
 import Main from './main';
 import Login from './login';
 import Offer from './offer';
 import Favorites from './favorites';
+import offerProptypes from './offer-proptypes';
 
 const App = (props) => {
-  const {rentalOffers} = props;
+  const {offers} = props;
 
   return <BrowserRouter>
     <Switch>
       <Route path="/" exact>
-        <Main rentalOffers = {rentalOffers} />
+        <Main offers={offers} />
       </Route>
       <Route path="/login" exact>
         <Login />
       </Route>
-      <Route path="/offer/:id?" exact>
-        <Offer />
-      </Route>
+      <Route path="/offer/:id" exact render={(prop) => {
+        const offer = offers.find((o) => o.id === parseInt(prop.match.params.id, 10));
+        return <Offer offer={offer} />;
+      }
+      } />
       <Route path="/favorites" exact>
-        <Favorites />
+        <Favorites offers={offers} />
       </Route>
       <Route>
         <h1>404</h1>
@@ -30,8 +34,6 @@ const App = (props) => {
   </BrowserRouter>;
 };
 
-App.propTypes = {
-  rentalOffers: PropTypes.number.isRequired
-};
+App.propTypes = {offers: PropTypes.arrayOf(offerProptypes)};
 
 export default App;

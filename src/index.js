@@ -3,13 +3,12 @@ import ReactDOM from 'react-dom';
 import App from './components/app';
 import PropTypes from 'prop-types';
 
-const rentalOffers = 312;
+import {offers} from './mocks/offers.js';
+import offerProptypes from './components/offer-proptypes';
 
 ReactDOM.render(
-    <App rentalOffers={rentalOffers} />,
+    <App offers={offers} />,
     document.getElementById(`root`)
 );
 
-App.propTypes = {
-  rentalOffers: PropTypes.number.isRequired
-};
+App.propTypes = {offers: PropTypes.arrayOf(offerProptypes)};
