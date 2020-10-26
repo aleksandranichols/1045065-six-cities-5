@@ -3,6 +3,7 @@ import {reviews} from './reviews.js';
 
 export const offers = [
   {
+    id: 0,
     title: `Beautiful & luxurious studio at great location`,
     description: `A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam. The building is green and from 18th century.` +
         `An independent House, strategically located between Rembrand Square and National Opera, but where the bustle of the city comes to rest in this alley flowery and colorful.`,
@@ -23,6 +24,7 @@ export const offers = [
     reviews
   },
   {
+    id: 1,
     title: `Wood and stone place`,
     description: `Wood and stone place`,
     type: `Private room`,
@@ -42,6 +44,7 @@ export const offers = [
     reviews
   },
   {
+    id: 2,
     title: `Canal View Prinsengracht`,
     description: `Canal View Prinsengracht`,
     type: `Apartment`,
@@ -61,6 +64,7 @@ export const offers = [
     reviews
   },
   {
+    id: 3,
     title: `Nice, cozy, warm big bed apartment`,
     description: `Nice, cozy, warm big bed apartment`,
     type: `Apartment`,

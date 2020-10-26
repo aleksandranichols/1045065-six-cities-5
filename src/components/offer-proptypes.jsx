@@ -5,8 +5,14 @@ import reivewProptypes from './review-proptypes';
 const offerProptypes = () => {
   return {
     i: PropTypes.number.isRequired,
+    match: PropTypes.shape({
+      params: PropTypes.shape({
+        id: PropTypes.string.isRequired
+      })
+    }),
     onHover: PropTypes.func.isRequired,
     offer: PropTypes.shape({
+      id: PropTypes.number.isRequired,
       title: PropTypes.string.isRequired,
       description: PropTypes.string.isRequired,
       type: PropTypes.string.isRequired,
