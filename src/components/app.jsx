@@ -19,11 +19,11 @@ const App = (props) => {
       <Route path="/login" exact>
         <Login />
       </Route>
-      {offers.map((offer, i) => (
-        <Route path={`/offer/${i}`} key={`offer-${i}`} exact>
-          <Offer offer={offer} />
-        </Route>
-      ))}
+      <Route path="/offer/:id" exact render={(props) => {
+          const offer = offers.find((offer) => offer.id ===  parseInt(props.match.params.id, 10));
+          return <Offer offer={offer} />
+        }
+      } />
       <Route path="/favorites" exact>
         <Favorites offers={offers} />
       </Route>
