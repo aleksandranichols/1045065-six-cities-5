@@ -56,7 +56,7 @@ class Map extends Component {
   }
 
   render() {
-    return <div id="map"></div>;
+    return <div id="map" style={{height: "100%"}}></div>;
   }
 }
 
